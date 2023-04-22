@@ -4,6 +4,8 @@ const nextConfig = {
     appDir: true,
   },
   reactStrictMode: true,
+  output: "export",
+  distDir: "dist",
 };
 
 module.exports = nextConfig;

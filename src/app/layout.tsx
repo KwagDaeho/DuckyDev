@@ -17,16 +17,18 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <header>
-          <h1>HEADER TEST</h1>
-        </header>
         <Recoil>
-          <ReactQuery>{children}</ReactQuery>
+          <ReactQuery>
+            <header>
+              <h1>HEADER TEST</h1>
+            </header>
+            {children}
+            <footer>
+              <h1>FOOTER TEST</h1>
+            </footer>
+          </ReactQuery>
         </Recoil>
         <ReactHotToast />
-        <footer>
-          <h1>FOOTER TEST</h1>
-        </footer>
       </body>
     </html>
   );

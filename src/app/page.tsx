@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Link from "next/link"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -118,6 +119,11 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+      </div>
+      <div>
+      <Link href="/sub1">
+        <h1>Go To SUB1</h1>
+      </Link>
       </div>
     </div>
   );
